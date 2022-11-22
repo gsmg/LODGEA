@@ -1,0 +1,469 @@
+@font-face {
+	font-family: 'theSans';
+	font-display: swap;
+	src: url("https://www.eu.lodgeacontent.com/gsmg/file/TheSansB4-5_Plain.woff2") format("woff2"),
+	url("https://www.eu.lodgeacontent.com/gsmg/file/TheSansB4-5_Plain.woff") format("woff");
+}
+@font-face {
+        font-family: 'theSansBold';
+        font-display: swap;
+        src: url("https://www.eu.lodgeacontent.com/gsmg/file/TheSansB4-7_Bold.woff2") format("woff2"),
+        url("https://www.eu.lodgeacontent.com/gsmg/file/TheSansB4-7_Bold.woff") format("woff");
+}
+body {
+	font-family: theSans, Verdana, sans-serif;
+	width: 100vw;
+	font-size: 16px;
+}
+.pageContentContainer, .footerTop, .footerBottom {
+	padding: 0px 16px;
+}
+@media only screen and (max-width: 767px) {
+	.headerSearch {
+		background: #ffdc00;
+		padding: 0 16px;
+	} 
+}
+@media (max-width: 1280px) {
+	.headerSearchContent {
+		padding: 0;
+	}
+}
+.headerContent {
+	padding-top: 0;
+	padding-bottom: 0;
+	margin: 15px 0;
+	height: 45px;
+}
+.searchModalWindow, .searchContentSortSelect, .searchContentSortSelect:after, resultItemDate, .propertyRoomType, .propertyRoomType:before, .propertyRoomMaximumOccupancy, .propertyRoomMaximumOccupancy:before, .destinationBreadcrumb, .pageContentContentBoxComponentText, .resultItemText, .resultItemDate {
+	font-size: 16px !important;
+}
+@media (max-width: 767px) {
+	.searchBarButton {
+		font-size: 18px !important;
+    		font-weight: 800 !important;
+		background: #000000 !important;
+		color: #ffffff !important;
+	}
+}
+.searchBarButton {
+	font-family: theSans, Verdana, sans-serif;
+	font-weight: 800 !important;
+}
+.searchBarButton:hover, .pageContentDestinationMapComponentButton:hover, .pageContentContentBoxComponentLink:hover, .resultItemOfferAction:hover, .searchViewMapButton:hover, .destinationPropertyItemTitle:hover, .destinationMapButton:hover {
+	background: #f5d400;
+}
+.searchBarButton:active, .pageContentDestinationMapComponentButton:active, .pageContentContentBoxComponentLink:active, .resultItemOfferAction:active, .searchViewMapButton:active, .destinationPropertyItemTitle:active, .destinationMapButton:active {
+	background: #ebcb00;
+}
+.searchBarButton:before {
+	font-size: 28px;
+	font-weight: 800;
+}
+.pageContentComponent:not(:empty) {
+	margin-top: 40px;
+}
+.headerContent a {
+	width: 200px;
+}
+.headerLogo {
+	width: 100%;
+	height: inherit;
+}
+.pageContent {
+	gap: 0;
+}
+.pageContentHeadlineTextComponent h1, p {
+        margin-top: 0px !important;
+        line-height: 1.5 !important;
+}
+.pageContentHeadlineTextComponent h1, .propertyTitle h1, .searchContentHeaderBarTitle, .destinationTitle h1 {	
+	font-size: 24px;
+	font-family: theSans, Verdana, sans-serif;
+	font-weight: 800;
+}
+.pageContentHeadlineTextComponent h1 {
+	margin-bottom: 12px !important;
+}
+.pageContentSlideContainerContent {
+	gap: 16px;
+}
+.searchContentSortSelect {
+	font-family: theSans, Verdana, sans-serif;
+}
+@media (max-width: 767px) .searchBar {
+    	display: grid;
+    	grid-template-columns: repeat(2,1fr);
+    	gap: 8px;
+}		
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+	.headerSearchContent {
+		padding: 8px 16px;
+	}
+	.searchBar {
+		min-height: auto;
+	}
+}
+@media only screen and (min-width: 1280px) {
+	.searchBar {
+        	font-size: 14px;
+		min-height: auto;
+	}
+	.pageContentContainer, .footerBottom, .footerTop {
+		padding: 0;
+	}
+	.pageContentHeadlineTextComponent h1, .searchContentHeaderBarTitle, .propertyTitle h1, .destinationTitle h1 {	
+		font-size: 28px;
+		font-family: theSans, Verdana, sans-serif;
+		font-size: 800;
+	}
+	.pageContentContentBoxComponentTitle, .resultItemTitle, .destinationListTitle h2, .bookingFormSection h2, .bookingInformation h1, .propertyRoomListTitle, .propertyServiceView h2, .propertyLocationView h2, .pageContentPageListComponentItemTitle {
+		font-size: 24px !important;
+		font-family: theSans, Verdana, sans-serif;
+		font-weight: 800;
+	}
+	.headerContent {
+        	margin: 30px 0;
+        	height: 60px;
+	}
+	.headerContent a {
+        	width: 250px;
+	}
+	.headerLanguageConfig:before, .headerCurrencyConfigSymbol {
+        	font-size: 28px;
+	}
+	.destinationHeroImage, .destinationContent {
+        	margin: 40px 0 0 0;
+	}
+	.destinationDescription {
+        	margin: 0 0 12px 0;
+	}
+	.destinationList, .destinationListTitle {
+        	margin: 0px !important;
+	}
+	.destinationMap {
+		margin: 40px 0px 0px 0px !important;
+	}
+	
+	.propertyLocationText, .propertyServiceText, .propertyServiceList, .propertyAvailability, .bookingForm {
+		padding: 16px;
+	}
+	.resultItemOffer {
+		width: 260px;
+	}
+	.propertyContent {
+ 	       padding: 0 0 40px 0;
+	}
+	.destinationTitle {
+		margin: 0 0 12px 0 !important;
+	}
+}
+.pageContentHeadlineTextComponent p {
+	font-size: 16px !important;
+	margin-bottom: 0;
+	background-color: #ffffff;
+	padding: 16px;
+}
+.pageContentContentBoxComponent, .propertyServiceText {
+	margin: 0;
+}
+.pageContentDestinationMapComponent {
+	margin-top: 0;
+}
+.pageContentContentBoxComponentLink {
+	white-space: nowrap;
+    	background: #ffdc00;
+    	-webkit-appearance: none;
+    	-moz-appearance: none;
+    	appearance: none;
+    	cursor: pointer;
+    	border: none;
+    	border-radius: 3px;
+    	padding: 14px 20px;
+   	 text-align: center;
+    	line-height: normal;
+    	outline: none;
+    	transition: box-shadow .2s,transform .2s,background-color .3s;
+    	display: inline-flex;
+    	justify-content: center;
+    	align-items: center;
+	font-weight: 800;
+	font-size: 16px;
+	font-family: theSans;
+}
+.pageContentContentBoxComponentTitle, .destinationListTitle h2, .resultItemTitle, .bookingFormSection h2, .bookingInformation h1, .propertyRoomListTitle, .propertyServiceView h2, .propertyLocationView h2, .pageContentPageListComponentItemTitle {
+	font-size: 20px;
+    	font-family: theSans, Verdana, sans-serif;
+    	margin-bottom: 12px;
+    	line-height: 1.5;
+	font-weight: 800;
+}
+.pageContentContentBoxComponentBody {
+	margin: 16px 0  16px 16px;
+	padding: 0;
+}
+.destinationDescription, .destinationListText {
+	line-height: 1.5;
+	font-size: 16px;
+	margin-bottom: 16px;
+}
+.pageContentContentBoxComponentBodyContent, .footerBottom {
+	gap: 0;
+}
+.pageContentPropertyListComponentProperty, .destinationItemImage {
+	background: #fff;
+   	border-radius: 3px;
+    	padding: 8px;
+}
+.pageContentPropertyListComponentPropertyName {
+	height: 32px;
+	color: black; 
+    	padding: 0 12px;
+    	font-size: 14px;
+    	font-weight: 400;
+	margin: revert;
+	line-height: 32px;
+    	vertical-align: middle;
+	left: 50%;
+    	transform: translate(-50%, 0%);
+}
+.pageContentPropertyListComponentPropertyName:hover, .destinationItemTitle:hover {
+	background: #f5d400;
+}
+.pageContentPropertyListComponentPropertyName:active, .destinationItemTitle:active {
+	background: #ebcb00;
+}
+.pageContentPropertyListComponentPropertyPriceTag, .destinationItemPriceTag, .destinationPropertyItemPriceTag {
+	top: 8px;
+	right: 8px;
+	color: #ffffff;
+	background-color: #000000;
+	border-radius: 3px;
+	font-size: 16px;
+}
+.pageContentDestinationMapComponentButton, .destinationMapButton, .pageContentPageListComponentItemLink {
+	color: #000000;
+	font-size: 16px;
+	padding: 14px 20px;
+	font-weight: 800;
+}
+.pageContentSlideContainerButton, .searchLocationListItemPrice {
+	background-color: #000000;
+}
+.propertyLocationMap {
+	margin: 0;
+}
+.searchModalWindow, .propertyImageView .glide__arrow--next, .propertyImageView .glide__arrow--prev, .resultImageView .glide__arrow--prev, .resultImageView .glide__arrow--next {
+	background-color: #ffffff;
+}
+.propertyLocationText, .propertyServiceText, .propertyServiceList, .propertyAvailability, .bookingForm {
+ 	background-color: #ffffff;
+	padding: 16px;
+    	border-radius: 3px;
+	line-height: 1.5
+	font-size: 16px;
+}
+.searchFilterResetButton[data-enabled=true] {
+	background: #ffdc00 !important;
+    	border: 1px solid #000000 !important;
+    	color: #000000 !important;
+	border-radius: 3px;
+	padding: 14px 20px;
+	font-size: 16px;
+}
+.searchFilterResetButton[data-enabled=false] {
+	display: none;
+}
+.searchDateApplyButton, .searchDateResetButton, .searchTravellerApplyButton, .searchTravellerResetButton, .filterModalResetButton {
+	border-radius: 3px;
+        padding: 14px 20px;
+        font-size: 16px;
+	font-weight: 700;
+}
+.searchDateResetButton, .searchTravellerResetButton, .filterModalResetButton {
+ 	background: #1e1e1e !important;
+        border: 1px solid #1e1e1e !important;
+        color: #ffffff !important;
+}
+.searchDateApplyButton, .searchTravellerApplyButton, .bookingButton[data-enabled=true], .filterModalApplyButton {
+	background: #00862f;
+        border: 1px solid #00862f;
+        color: #ffffff;
+	font-size: 16px;
+	font-weight: 700;
+}
+.filterModalApplyButton, .filterModalResetButton {
+	justify-content: center;
+}
+.searchDateBottomBar, .searchTravellerBottomBar {
+	background-color:#ffdc00;
+}
+.searchContentBreadcrumbNode:last-child, .litepicker .month-item-name, .litepicker .month-item-weekdays-row div, .litepicker .month-item-year, .searchLengthOfStayLabelText, .searchModalWindowTitleText, .searchDateRange, .searchLengthOfStaySelectInput, .bookingTotalPriceTitle {
+	font-size: 16px;
+	font-weight: 800;
+}
+.searchLengthOfStayExactCheck[data-checked=true], .searchFilterItem[data-checked=true], .resultItemDateList, .resultItemLengthOfStay, .resultItemTitle, .propertyImageView .glide__arrow--next::before, .propertyImageView .glide__arrow--prev::before, .searchContentPendingText, .searchContentBreadcrumbNode {
+	color: #000000;
+}
+.bookingButton {
+	background: #bebebe;
+}
+.searchTravellerInput {
+	overflow-y: hidden;
+}
+.resultItemOfferPriceTagLabel, .destinationTitlePriceTag, .headerCurrencyOptionCode, .headerLanguageOptionCode, .headerLanguageOptionCode:hover, .headerLanguageOptionCode:active {
+	color: #ffffff !important;
+	background-color: #000000 !important;
+	font-size: 16px;
+}
+.resultItemOfferAction, .searchViewMapButton {
+	color: #000000;
+	padding: 14px 20px !important;
+	font-weight: 800 !important;
+}
+.searchFilterResetButton, .propertyCalendar .litepicker .container__days .dayItemDateValue, .dayItemPriceTag {
+	font-size: 14px;
+}
+.propertyCalendar .litepicker .day-item[data-available=false] {
+	border-bottom: 2px solid #AF0200;
+}
+.propertyCalendar .litepicker .day-item[data-available=true] {
+	border-bottom: 2px solid #0a861f;
+}
+.headerLanguageOptionName, .destinationBreadcrumb li a, .destinationPropertyItemTitle {
+	color: #000000 !important;
+}
+.destinationBreadcrumb li:last-child {
+	font-weight: 800;
+}
+@media (max-width: 1280px) {
+	body[data-pagetype=search] .searchBar, .searchFilterSectionTypeList {
+		background: #ffffff;
+	}
+}
+::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece, .headerModalWindow {
+	background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb-piece, ::-webkit-scrollbar-thumb:vertical {
+	background-color: #e8e8e8;
+}
+.destinationHeroImage {
+	margin: 40px 16px 0 16px;
+    	height: auto;
+    	width: auto;
+}
+.destinationBreadcrumb, .propertyRoomListTitle, .propertyServiceView h2, .propertyLocationView h2, .bookingFormSectionText, .propertySubline {
+	margin: 0 0 12px 0;
+}
+.destinationListItem h2 {
+	vertical-align: middle;
+    	left: 50%;
+    	transform: translate(-50%, -40%);
+	color: #000000;
+	font-size: 16px;
+}
+.destinationListTitle, .destinationList {
+	margin: 0 16px;
+}
+.searchLocationListItem:hover, searchLocationListItem:active, .searchFilterActionBar, .searchFilterActionBar {
+	background-color: #ffdc00;
+}
+.destinationContent, .footer, .propertyLocationView {
+        margin: 40px 0 0 0;
+}
+.destinationMap {
+	margin: 40px 16px 0 16px;
+}
+.propertyLocationText, .propertyServiceView, .propertyImageHeader, .propertyDescriptionText, .propertyTypeList {
+	margin: 0 0 40px 0;
+}
+.pageContentContentBoxComponentText, .propertyDescriptionText, .propertyServiceText, .propertyServiceItem, .propertyLocationText, .propertyTypeList {
+	line-height: 1.5;
+}
+.propertyRoomTitle h3 {
+	margin: 16px 0;
+}
+.pageContentContentBoxComponentText {
+	margin-bottom: 20px;
+}
+.destinationPropertyItemTitle {
+	left: 50% !important;
+    	transform: translate(-50%, -30%);
+}
+.searchInputHeader {
+	padding: 8px 0;
+}
+.propertyAddressText, .propertyDescriptionServiceItem, .resultItemLengthOfStay, .resultItemAddress, .resultItemText, .resultItemDate, .footerBottomDocumentLink, .litepicker .container__days, .searchTravellerInput, .searchContentBreadcrumb {
+	font-size: 16px !important;
+}
+.propertyRoomList {
+	gap: 24px;
+}
+.propertyRoomList {
+	margin: 0 0 24px 0;
+} 
+.bookingFormSection, .footerBottom {
+	margin-bottom: 40px;
+} 
+.searchBar, .bookingFormSectionText, .bookingTermsContent, .bookingProductUnitTitleName, .bookingProductUnitType, .bookingProductContent, .bookingPriceComponent, .bookingOccupancyPriceText, .bookingProductName, .propertyTypeList li, .propertyTravellerInput, .propertyTravellerInput, .propertyCalendarPriceSwitchType, .month-item-name, .month-item-year, .month-item-weekdays-row, .propertyDateSelectInfo, .propertyAvailabilityRoomInformation h4, .propertyAvailabilityRoomSubtitle, .searchFilterItem, .bookingDateRange, .propertyAvailabilityProductMealPlan, .propertyAvailabilityProductNameText, .propertyAvailabilityButton, .footerContent, .pageContentPageListComponentItemText {
+    	font-size: 16px;
+   	line-height: 1.5;
+}
+.bookingContent {
+	margin-top: 0;
+}
+.bookingContactForm, .bookingInformation h1 {
+	padding-top: 4px;
+}
+.bookingInformation h1 {
+	padding-bottom: 0;
+}
+.bookingProduct {
+	padding-top: 12px;
+}
+.bookingDateField, .bookingDateField, .bookingDateField {
+	padding: 0 0 16px 0;
+}
+.propertyCurfew, .propertyAgeRestriction {
+	color: #AF0200;
+	background: #ffffff;
+	font-size: 16px;
+}
+.propertyContent {
+	padding-bottom: 0px !important;
+}
+.footerContent {
+	padding: 0 16px;
+	gap: 40px;
+}
+.footerTopText, .pageContentPageListComponentItemTitle {
+	margin-bottom: 0;
+}
+.propertyAvailability h2 {
+	font-size: 18px;
+}
+.destinationTitle {
+	margin: 0 16px 12px 16px;
+}
+body[data-pagetype=destination] .footer {
+    margin-top: 40px;
+}
+.bookingPrice {
+	padding: 16px 0;
+}
+.pageContentPageListComponentContainerBackground {
+	background-color: unset;
+} 
+.pageContentPageListComponentItem {
+	background: #ffffff;
+	margin-bottom: 0;
+} 
+.pageContentPageListComponentItemImage img {
+	height: 100%;
+}
+.pageContentPageListComponentItemContent {
+	gap: 12px;
+}
+.pageContentPageListComponentContainer {
+	padding: 0;
+}
