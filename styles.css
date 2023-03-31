@@ -78,7 +78,7 @@ body {
 }
 
 .headerContent a {
-    width: 200px;
+    width: 290px;
 }
 
 .headerLogo {
@@ -156,10 +156,6 @@ body {
     .headerContent {
         margin: 30px 0;
         height: 60px;
-    }
-
-    .headerContent a {
-        width: 250px;
     }
 
     .headerLanguageConfig:before, .headerCurrencyConfigSymbol {
@@ -583,22 +579,86 @@ body[data-pagetype=destination] .footer {
     padding: 0;
 }
 
-.footerPaymentMethod {
-    background-color: #1e1e1e;
-}
-
-.footerPaymentMethod:hover {
-    background: #292929;
-}
-
-.footerPaymentMethod:active {
-    background: #333;
-}
-
 .footerPaymentMethod svg path, .footerPaymentMethod svg polygon {
     fill: #ffffff;
 }
 
 .footerPaymentMethod:nth-last-child(2) svg path:nth-child(2), .footerPaymentMethod:nth-last-child(2) svg path:nth-child(3), .footerPaymentMethod:nth-last-child(2) svg path:nth-child(6), .footerPaymentMethod:nth-last-child(2) svg ellipse {
-    fill: #000000 !important;
+    fill: #000000;
+}
+
+.footerPaymentMethod:nth-child(4) svg path:nth-child(3) {
+    fill: #EB001B;
+    stroke: none;
+}
+
+.footerPaymentMethod:nth-child(4) svg rect:nth-child(2) {
+    fill: #FF5F00;
+    stroke: none;
+
+}
+
+.footerPaymentMethod:nth-child(4) svg path:nth-child(4) {
+    fill: #F79E1B;
+    stroke: none;
+}
+
+.footerPaymentMethod:nth-child(5) svg path:nth-child(1) {
+    fill: #016FD0;
+    stroke: none;
+}
+
+.footerPaymentMethod:nth-child(5) svg path:nth-child(2) {
+    fill: #fff;
+}
+
+.footerBottom {
+    flex-flow: column;
+}
+
+.footerBottomLinkList {
+    order:1;
+    margin-bottom: 40px;
+    margin-top: 0px;
+}
+
+.footerBottom:after {
+    content: url(https://www.eu.lodgeacontent.com/gsmg/file/gelbe-seiten-mit-service.svg);
+    display: block;
+    width: 290px;
+    order: 3;
+    align-self: end;
+
+}
+
+.footerBottomSocialList {
+    order:2;
+}
+
+@media (min-width: 961px) {
+    .footerBottom {
+        flex-flow: row;
+    }
+    .footerBottomLinkList {
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+}
+
+.headerSearch, .searchInputHeader {
+    background: #ffdc00;
+}
+
+@media (min-width: 768px) {
+    .searchBar {
+        padding: 8px;
+        background: black;
+        border-radius: 4px;
+    }
+}
+.pageContentSlideControlContainer:after {
+    background: none;
+}
+.pageContentSlideControlContainer:before {
+    background: none;
 }
